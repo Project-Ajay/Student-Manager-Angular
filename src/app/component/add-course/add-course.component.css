@@ -1,0 +1,46 @@
+/* Base styles for the form */
+.update-course {
+  max-width: 300px;
+  margin: auto;
+}
+
+/* Style for the input fields */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #00b1ff;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Placeholder styles */
+input[type="text"]::placeholder {
+  color: #ccc; /* Light grey color */
+}
+
+/* Style for the submit button */
+button {
+  width: 100%;
+  background-color: #4800ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #78f174;
+}
+
+/* Adding some hover effects for inputs */
+input[type="text"]:hover {
+  border-color: #7afa6f;
+}
+
+/* Make labels bold */
+.form-group label {
+  font-weight: bold;
+}

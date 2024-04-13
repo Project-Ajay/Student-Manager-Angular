@@ -1,0 +1,25 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Course Code</th>
+    <th scope="col">Course Name</th>
+    <th scope="col">Credit</th>
+    <th scope="col">Actions</th> <!-- New column for edit link -->
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let course of courseList;">
+    <td class= "bold-text" scope="row">{{ course.courseCode }}</td>
+    <td>{{ course.courseName }}</td>
+    <td>{{ course.courseCredit }}</td>
+    <td>
+      <a [routerLink]="['/editCourse', course.id, 'edit']" [queryParams]="{allowEdit:'1'}" class="edit-link">Edit</a>
+      <a [routerLink]="['/deleteCourse', course.id]" routerLinkActive="active" class="delete-link">Delete</a>
+    </td>
+
+
+
+  </tr>
+  </tbody>
+</table>
+<router-outlet></router-outlet>

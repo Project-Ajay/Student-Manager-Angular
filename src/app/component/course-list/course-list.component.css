@@ -1,0 +1,41 @@
+/* Apply styles to the table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* Style table header */
+.table thead th {
+  background-color: #4800ff;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Style table body */
+.table tbody td {
+  border-top: 1px solid #dee2e6;
+  padding: 10px;
+}
+
+/* Style table actions */
+.table tbody td a {
+  color: #0081ff;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.table tbody td a:hover {
+  color: #ff0008;
+}
+
+/* Style active links */
+.active {
+  font-weight: bold;
+}
+.bold-text {
+  font-weight: bold;
+}
+

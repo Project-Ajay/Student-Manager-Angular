@@ -18,7 +18,7 @@ export class AddCourseComponent {
 
   course: Course;
 
-  constructor(private courseService: CourseService, private route: ActivatedRoute, private router: Router,private formBuilder: FormBuilder)
+  constructor(private courseService: CourseService, private route: ActivatedRoute, private router: Router)
   {
     this.course = new Course()
   }
@@ -33,5 +33,4 @@ export class AddCourseComponent {
       }
     );
   }
-  protected readonly onsubmit = onsubmit;
 }
